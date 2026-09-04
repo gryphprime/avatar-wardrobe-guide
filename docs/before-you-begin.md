@@ -1,33 +1,33 @@
 # Before you begin
 
-You only need a few things ready. If someone gave you a complete avatar project, some of these may already be installed.
+Make sure you have the following software before you start. If someone gave you a complete avatar project, some of these packages might already be installed.
 
-## Software checklist
+## Confirm the required software
 
-| You need | Version | Why it matters |
+| You need | Version | Why you need it |
 | --- | --- | --- |
-| Unity | 2022.3 or newer | This is the editor where you open the avatar project. |
-| VRChat Avatars | 3.10.4 or newer | This provides the avatar components used by VRChat. |
-| Modular Avatar | 1.18.3 or newer | This builds the generated menus and toggles into the avatar. |
-| VRChat Outfit Tools | The version you received | This adds Avatar Wardrobe and Avatar Outfit Toggles to Unity. |
+| Unity | 2022.3 or later | You use Unity to open and edit the avatar project. |
+| VRChat Avatars | 3.10.4 or later | This package provides the avatar components used by VRChat. |
+| Modular Avatar | 1.18.3 or later | This package adds the generated menus and controls to the avatar. |
+| VRChat Outfit Tools | The version you received | This package adds Avatar Wardrobe and Avatar Outfit Toggles to Unity. |
 
-Install the Outfit Tools package using the method that came with it, such as VCC/VPM or a `.unitypackage`. After Unity finishes importing it, the new commands are under the **Tools** menu.
+Install the VRChat Outfit Tools package by following the instructions that came with it. You might install it through VCC or VPM, or import a `.unitypackage`. After Unity finishes importing the package, the commands are available in the **Tools** menu.
 
-## Open the right avatar
+## Select the avatar instance
 
 1. Open the Unity project that contains your avatar and outfit assets.
 2. In the **Hierarchy**, find the avatar placed in the scene.
-3. Click that avatar once.
+3. Select the avatar.
 
-The avatar in the Hierarchy is sometimes called a **scene avatar instance**. It is different from the saved avatar asset in the **Project** window.
+The avatar in the **Hierarchy** is the scene avatar instance. It is different from the saved avatar asset in the **Project** window.
 
-!!! important "Wardrobe edits the scene copy"
-    Avatar Wardrobe installs onto the selected scene avatar. It does not directly rewrite the original prefab asset in your Project window.
+!!! important "The tools edit the scene avatar"
+    Avatar Wardrobe installs outfits on the selected scene avatar. It does not directly change the original prefab asset in the **Project** window.
 
-## A quick selection check
+## Select an outfit root for toggles
 
-When you are working with outfit toggles, select the outfit object **under** the avatar in the Hierarchy. Do not select the avatar root itself.
+When you create outfit toggles, select the outfit object under the avatar in the **Hierarchy**. Do not select the avatar root.
 
-The easiest choice is usually the large parent object that contains the whole outfit, such as `Casual Outfit`, `Jacket Set`, or `Summer Dress`.
+The outfit root is usually the parent object that contains the whole outfit, such as `Casual Outfit`, `Jacket Set`, or `Summer Dress`.
 
-If you are unsure which object is the outfit root, expand the outfit once. The object that contains the clothing pieces is usually the right one.
+If you are unsure which object is the outfit root, expand the outfit once. Select the object that contains the clothing pieces.
