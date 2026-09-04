@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="author" content="Avatar Wardrobe" /><link rel="canonical" href="https://gryphprime.github.io/avatar-wardrobe-guide/outfit-toggles/" />
+      <link rel="shortcut icon" href="../img/favicon.ico" />
+    <title>Make outfit toggles - Avatar Wardrobe & Outfit Toggles</title>
+    <link rel="stylesheet" href="../css/theme.css" />
+    <link rel="stylesheet" href="../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+        <link href="../stylesheets/extra.css" rel="stylesheet" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Make outfit toggles";
+        var mkdocs_page_input_path = "outfit-toggles.md";
+        var mkdocs_page_url = "/avatar-wardrobe-guide/outfit-toggles/";
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href=".." class="icon icon-home"> Avatar Wardrobe & Outfit Toggles
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="..">Start here</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../before-you-begin/">Before you begin</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../add-an-outfit/">Add an outfit</a>
+                </li>
+              </ul>
+              <ul class="current">
+                <li class="toctree-l1 current"><a class="reference internal current" href="#">Make outfit toggles</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#1-select-the-outfit-root">1. Select the outfit root</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#2-create-or-update-the-toggles">2. Create or update the toggles</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#3-test-the-result">3. Test the result</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#optional-commands">Optional commands</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#updating-an-existing-menu">Updating an existing menu</a>
+    </li>
+    </ul>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../troubleshooting/">Fix common issues</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../glossary/">Small glossary</a>
+                </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="..">Avatar Wardrobe & Outfit Toggles</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href=".." class="icon icon-home" aria-label="Docs"></a></li>
+      <li class="breadcrumb-item active">Make outfit toggles</li>
+    <li class="wy-breadcrumbs-aside">
+          <a href="https://github.com/gryphprime/avatar-wardrobe-guide/edit/master/docs/outfit-toggles.md">Edit on avatar-wardrobe-guide</a>
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="make-outfit-toggles">Make outfit toggles</h1>
+<p>An outfit toggle is a menu button that turns an avatar object on or off. Avatar Outfit Toggles creates those buttons from the objects you select in Unity.</p>
+<p>Use this page when:</p>
+<ul>
+<li>an outfit is already in your scene;</li>
+<li>you want to create controls without using Avatar Wardrobe; or</li>
+<li>you changed an outfit and want to update its generated controls.</li>
+</ul>
+<h2 id="1-select-the-outfit-root">1. Select the outfit root</h2>
+<p>In the <strong>Hierarchy</strong>, select one or more top-level outfit objects below the same avatar.</p>
+<p>Select the large parent object for each outfit, not the avatar itself and not every individual mesh piece.</p>
+<p>Good selection:</p>
+<pre><code class="language-text">My Avatar
+└── Casual Outfit        ← select this
+    ├── Jacket
+    └── Shoes
+</code></pre>
+<p>You can select multiple outfits if they belong to the same avatar and share a common parent.</p>
+<h2 id="2-create-or-update-the-toggles">2. Create or update the toggles</h2>
+<p>Choose:</p>
+<p><strong>Tools → Avatar Outfit Toggles → Create or Update Outfit Toggles</strong></p>
+<p>You can also right-click the selection in the Hierarchy and open <strong>Avatar Outfit Toggles</strong>.</p>
+<p>The tool creates a submenu and adds controls for renderable outfit parts. If a generated menu already exists for that outfit, the command updates it instead of making a second one.</p>
+<h2 id="3-test-the-result">3. Test the result</h2>
+<p>The generated submenu is added to the avatar’s expression menu. Build or upload the avatar, open the menu in VRChat, and try the outfit on and off.</p>
+<p>With one outfit, the submenu uses that outfit’s name. With multiple outfits, the shared submenu is named <strong>Outfits</strong>.</p>
+<div class="admonition tip">
+<p class="admonition-title">Seeing the outfit in Unity is normal</p>
+<p>Installed outfits stay visible while you edit. The generated menu controls the outfit when the avatar is running in VRChat.</p>
+</div>
+<h2 id="optional-commands">Optional commands</h2>
+<p>Start with <strong>Create or Update Outfit Toggles</strong>. The other commands are helpers for an existing generated menu:</p>
+<table>
+<thead>
+<tr>
+<th>Command</th>
+<th>Use it when</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Refresh Toggle Icons</strong></td>
+<td>The outfit’s appearance changed and the icons are out of date.</td>
+</tr>
+<tr>
+<td><strong>Clean Up Toggle Names</strong></td>
+<td>You want friendlier toggle labels.</td>
+</tr>
+<tr>
+<td><strong>Group Similar Toggles With Apple Intelligence</strong></td>
+<td>Several generated parts should be grouped into one related control.</td>
+</tr>
+</tbody>
+</table>
+<p>The Apple Intelligence helpers are optional. They require macOS 26 or newer, an Apple Silicon Mac, and Apple Intelligence enabled. Regular Wardrobe and toggle generation work without them.</p>
+<h2 id="updating-an-existing-menu">Updating an existing menu</h2>
+<p>If you select an existing submenu that uses <strong>MA Menu Item → Children</strong>, the Outfit Toggles commands can work with that menu directly. Generated controls are updated; manual controls are left alone by the grouping helper.</p>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../add-an-outfit/" class="btn btn-neutral float-left" title="Add an outfit"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../troubleshooting/" class="btn btn-neutral float-right" title="Fix common issues">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+        <span>
+          <a href="https://github.com/gryphprime/avatar-wardrobe-guide" class="fa fa-code-fork" style="color: #fcfcfc"> avatar-wardrobe-guide</a>
+        </span>
+    
+    
+      <span><a href="../add-an-outfit/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../troubleshooting/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "..";</script>
+    <script src="../js/theme_extra.js"></script>
+    <script src="../js/theme.js"></script>
+      <script src="../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>
