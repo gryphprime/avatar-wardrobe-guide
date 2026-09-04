@@ -1,4 +1,4 @@
-site_name: Avatar Wardrobe & Outfit Toggles
+site_name: Avatar Wardrobe and Avatar Outfit Toggles
 site_description: A beginner-friendly guide to adding outfits and creating VRChat menu toggles in Unity.
 site_author: Avatar Wardrobe
 site_url: https://gryphprime.github.io/avatar-wardrobe-guide/
@@ -22,6 +22,6 @@ nav:
   - Start here: index.md
   - Before you begin: before-you-begin.md
   - Add an outfit: add-an-outfit.md
-  - Make outfit toggles: outfit-toggles.md
+  - Create outfit toggles: outfit-toggles.md
   - Fix common issues: troubleshooting.md
-  - Small glossary: glossary.md
+  - Glossary: glossary.md
