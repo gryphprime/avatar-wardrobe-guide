@@ -1,63 +1,59 @@
 # Add an outfit with Avatar Wardrobe
 
-Avatar Wardrobe searches the outfit assets already in your Unity project. It does not download clothing from a shop or invent a new outfit; it helps you find and install what is already available locally.
+Avatar Wardrobe searches the outfit assets in your Unity project. It does not download clothing from a shop or create a new outfit. It helps you find and install outfits that are already available in the project.
 
-## 1. Select your avatar
+## Select the avatar instance
 
-In Unity’s **Hierarchy**, click the avatar instance you are editing.
+Before you open Avatar Wardrobe, select the avatar instance that you are editing in the **Hierarchy**.
 
-## 2. Open Avatar Wardrobe
+## Open Avatar Wardrobe
 
-From Unity’s top menu, choose:
+From the **Tools** menu, select **Avatar Wardrobe**.
 
-**Tools → Avatar Wardrobe**
-
-In the small Unity window:
+In the Avatar Wardrobe window:
 
 1. Check that **Install target** shows the avatar you selected.
-2. Click **Open Wardrobe**.
-3. Keep the Unity window open while you browse. Installs are sent to the target shown there.
+2. Select **Open Wardrobe**.
+3. Keep the Unity window open while you browse. Avatar Wardrobe installs outfits on the target shown in **Install target**.
 
-## 3. Let the list update
+## Update the outfit list
 
-The first time you use Wardrobe, it may need to index the prefab assets in the project. An index is simply a searchable list of what is available.
+Before you search for an outfit, update the list if this is the first time you have opened the project or if you recently added outfit assets. The index is a searchable list of the assets in the project.
 
-- Click **Index changes** after adding or changing outfit assets.
-- Click **Rebuild** if an outfit is missing or the list seems stale.
+- Select **Index changes** after you add or change outfit assets.
+- Select **Rebuild** if an outfit is missing or the list is out of date.
 
-You do not need to rebuild every time you open Wardrobe.
+You do not need to rebuild the list every time you open Avatar Wardrobe.
 
-## 4. Search and check an outfit
+## Search for an outfit
 
-Use the search box for an outfit name, color variant, or folder path. You can narrow the list with:
+Enter an outfit name, color variant, or folder path in the search box. Use the following filters to narrow the list:
 
-- **Compatible** — the best choices to try first.
+- **Compatible** — outfits that are the best choices to try first.
 - **Installed** — outfits already on this avatar.
-- **Unknown** — outfits Wardrobe could not confidently test.
+- **Unknown** — outfits that Avatar Wardrobe could not confidently test.
 - **Hair**, **Outfits**, or **Gimmicks** — categories of assets.
 
-Open an outfit card to review its variants, compatibility, parts, materials, and performance details.
+Select an outfit card to review its variants, compatibility, parts, materials, and performance details.
 
-Compatibility labels mean:
-
-| Label | What it means |
+| Label | Meaning |
 | --- | --- |
-| **Compatible** | Wardrobe found a good match. |
+| **Compatible** | Avatar Wardrobe found a good match. |
 | **Likely compatible** | The match looks promising, but is not fully confirmed. |
 | **Not compatible** | The outfit was made for a different avatar setup or does not match well. |
-| **Untested** | Wardrobe could not test enough information to decide. |
+| **Untested** | Avatar Wardrobe could not test enough information to decide. |
 
-## 5. Add it to your avatar
+## Add the outfit to the avatar
 
-Choose the variant you want and click **Add to Avatar**.
+After you choose a variant, select **Add to Avatar**.
 
-Leave **Create toggles** checked if you want Wardrobe to create menu controls automatically. The outfit is added to the selected scene avatar and becomes the default outfit. Its main menu control is labeled **Wear This Outfit**.
+If you want Avatar Wardrobe to create menu controls automatically, leave **Create toggles** selected. Avatar Wardrobe adds the outfit to the selected scene avatar and makes it the default outfit. The main menu control is named **Wear This Outfit**.
 
-!!! warning "Advanced install"
-    **Advanced install (allow incompatible)** lets you add an outfit marked as incompatible. Try a compatible variant first. If you use Advanced install, expect that the outfit may need manual adjustment.
+!!! warning "Install an incompatible outfit"
+    **Advanced install (allow incompatible)** lets you add an outfit marked as incompatible. Try a compatible variant first. If you use this command, you might need to adjust the outfit manually.
 
-## What happens next?
+## After installation
 
-When installation succeeds, Wardrobe creates controls for the outfit if **Create toggles** was enabled. Installed outfits stay visible while you edit the avatar in Unity; they switch through the menu when the avatar is running in VRChat.
+When installation succeeds, Avatar Wardrobe creates controls for the outfit if **Create toggles** was selected. Installed outfits remain visible while you edit the avatar in Unity. The generated menu controls which outfit is active when the avatar is running in VRChat.
 
-If you want to create or rebuild controls yourself, continue with [Make outfit toggles](outfit-toggles.md).
+To create or update controls yourself, see [Create outfit toggles](outfit-toggles.md).
