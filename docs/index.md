@@ -6,6 +6,10 @@ Use Avatar Wardrobe to find and add compatible outfits. Use Avatar Outfit Toggle
 
 This guide is for people who are new to Unity as well as people who have used Unity before. You do not need to write animations or edit scripts to follow these instructions.
 
+## Install or update Avatar Wardrobe
+
+Start with [Before you begin](before-you-begin.md) for installation through VCC or ALCOM, migration from an older installation, and updates. The [VPM installation page](https://gryphprime.github.io/avatar-wardrobe-vpm/) provides the repository link.
+
 ## Choose a task
 
 ### Add an outfit

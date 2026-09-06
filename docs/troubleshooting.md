@@ -1,6 +1,22 @@
 # Fix common issues
 
-Most problems have one of three causes: the wrong object is selected, the Wardrobe index is out of date, or the outfit does not match the avatar.
+For installation problems, start with the VPM checks below. For outfit problems, check the selected object, the Wardrobe index, and avatar compatibility.
+
+## The VPM installation link does not open
+
+The **Open in VCC / ALCOM** link uses the `vcc:` URL scheme. An installed app must handle that scheme, and your browser must allow it to open.
+
+Use the [manual repository steps](before-you-begin.md#add-the-vpm-repository) if the link does nothing. If ALCOM settings offer **Use ALCOM for vcc: URL Scheme**, enable it and select **Register URL Scheme Handler Now**. These controls depend on your platform; use manual entry if they are absent.
+
+## Avatar Wardrobe is missing from Manage Packages
+
+Confirm that you added the [Avatar Wardrobe repository](before-you-begin.md#add-the-vpm-repository), then refresh the package list for the target project and search for **Avatar Wardrobe**. Regular releases do not require prerelease packages to be enabled.
+
+If installation reports that Modular Avatar cannot be found, add its repository using the [Modular Avatar installation page](https://modular-avatar.nadena.dev/docs/intro), then refresh and retry.
+
+## The Avatar Wardrobe command is missing in Unity
+
+Check that Avatar Wardrobe is installed in the correct project and that you applied the package changes in VCC or ALCOM. Reopen Unity, wait for compilation to finish, and look for **Tools → Avatar Wardrobe**. If compilation fails, open the **Console** and resolve the reported errors before trying again.
 
 ## An outfit does not appear in Wardrobe
 
